@@ -8,7 +8,7 @@
       "name": "launch-depot",
       "source": {
         "source": "local",
-        "path": "./plugins/launch-depot"
+        "path": "./"
       },
       "policy": {
         "installation": "AVAILABLE",
