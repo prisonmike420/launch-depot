@@ -1,13 +1,13 @@
 platform,priority,status,submission_type,free_or_paid,human_action,public_url,notes
-skills.sh,P0,ready_to_index,automatic_cli,free,no,,Install via npx skills add triggers indexing/reindexing
-SkillsMP,P0,discoverable_by_crawl,github_crawl,free,github_topic_recommended,,Indexes public GitHub SKILL.md; add claude-skills or claude-code-skill topic when possible
-Skills Directory,P0,needs_human_review,web_form,free,yes,,Submit public GitHub skill for security scan
-AwesomeSkills.dev,P0,needs_human_review,web_form,free,yes,,GitHub URL submission; listing described as immediate
-Skill Store,P0,needs_human_review,web_form,free,yes,,Submit GitHub URL; automated security analysis then maintainer review
-ClaudSkills,P1,needs_human_review,web_form,free,yes,,Submit public GitHub repo and contact email
-Microsoft CAT Agent Skills,P1,prepared_for_pr,github_pr,free,fork_required,,Contribution is a PR under submissions/<slug>
-Codex Marketplace,P1,needs_human_review,web_form,free_or_unknown,yes,,Community marketplace; submit GitHub repo URL
-OpenAI universal plugin directory,P1,needs_human_review,plugin_submission,free_or_unknown,yes,,Skills-only plugin package is ready; public publishing requires submission portal/review
-Agent Skills Market,P2,not_started,paid_web_form,paid,yes,,$25 paid listing; do not auto-purchase
-VoltAgent awesome-agent-skills,P2,not_eligible_yet,github_pr,free,yes,,Requires real community usage; brand-new skill should wait
-JackyST0 awesome-agent-skills,P2,not_eligible_yet,github_pr,free,yes,,Community submissions normally require 64+ GitHub stars
+skills.sh,P0,blocked_external_index,automatic_cli,free,one_real_install_or_index_request,,"Repo layout is ready. Local npx could not run because this execution environment has no outbound DNS. GitHub integration also cannot create issues in vercel-labs/skills (403)."
+SkillsMP,P0,awaiting_crawl,github_crawl,free,github_topic_recommended,,"Public SKILL.md is live; add claude-skills or claude-code-skill repository topic when repo metadata editing is available."
+Skills Directory,P0,needs_human_review,web_form,free,yes,,"Submit public GitHub skill for security scan."
+AwesomeSkills.dev,P0,needs_human_review,web_form,free,yes,,"Submit the canonical skill GitHub URL; directory states listings are immediate after form submission."
+Skill Store,P0,needs_human_review,web_form,free,yes,,"Submit GitHub URL; automated security analysis then maintainer review."
+ClaudSkills,P1,needs_human_review,web_form,free,yes,,"Requires contact email plus public GitHub repo."
+Microsoft CAT Agent Skills,P1,prepared_for_pr,github_pr,free,fork_required,,"Documented process requires a fork and PR under submissions/<slug>."
+Codex Marketplace,P1,needs_human_review,web_form,free_or_unknown,yes,,"Community marketplace; submit GitHub repo URL."
+OpenAI universal plugin directory,P1,needs_human_review,plugin_submission,free_or_unknown,yes,,"Portable root plugin is ready; public publication requires submission portal/review."
+Agent Skills Market,P2,not_started,paid_web_form,paid,yes,,"$25 paid listing; never auto-purchase."
+VoltAgent awesome-agent-skills,P2,not_eligible_yet,github_pr,free,yes,,"Requires real community usage; brand-new skill should wait."
+JackyST0 awesome-agent-skills,P2,not_eligible_yet,github_pr,free,yes,,"Community submissions normally require 64+ GitHub stars."
