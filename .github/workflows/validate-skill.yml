@@ -1,0 +1,32 @@
+name: Validate Agent Skill
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      DISABLE_TELEMETRY: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Discover Launch Depot
+        run: npx --yes skills@latest add . --skill launch-depot --agent codex --yes --copy
+      - name: Verify installed skill
+        run: test -f "$HOME/.agents/skills/launch-depot/SKILL.md" || test -f "$HOME/.codex/skills/launch-depot/SKILL.md"
+
+  initial-skills-sh-index:
+    if: github.event_name == 'push' && contains(github.event.head_commit.message, '[skills-index]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: One-time remote install to enqueue skills.sh indexing
+        run: npx --yes skills@latest add prisonmike420/launch-depot --skill launch-depot --agent codex --yes --copy
