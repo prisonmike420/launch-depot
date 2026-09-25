@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "launch-depot",
+  "version": "0.1.0",
+  "description": "Research, prioritize, prepare, and run high-signal product submissions across launch directories, skill registries, design galleries, and editorial discovery channels.",
+  "repository": "https://github.com/prisonmike420/launch-depot",
+  "homepage": "https://github.com/prisonmike420/launch-depot",
+  "license": "MIT",
+  "keywords": ["distribution", "launch", "directories", "agent-skills", "backlinks", "product-marketing", "seo"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Launch Depot",
+        "shortDescription": "Research and run high-signal product submissions",
+        "longDescription": "Build a verified distribution plan, prepare product copy and assets, submit only to relevant platforms, and track live placements without fabricating claims, paying, adding badges, or automating community spam.",
+        "developerName": "prisonmike420",
+        "category": "Business & Operations",
+        "capabilities": ["Read", "Write"],
+        "defaultPrompt": [
+          "Research relevant launch and directory opportunities for this product and create a prioritized submission plan.",
+          "Prepare this website for submissions, create the copy kit and tracker, and stop before any paid or identity-sensitive action.",
+          "Review my existing submissions and verify which ones are actually live, indexed, and linking back to the site."
+        ]
+      }
+    }
+  }
+}
