@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Distribution & Launch",
+      "description": "Skills for product distribution, directory submissions, launch planning, and placement verification.",
+      "skills": ["launch-depot"]
+    }
+  ]
+}
